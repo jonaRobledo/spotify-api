@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 export const dbConnect = async () => {
-	/*mongoose.connect(
+	/*mongoose.connect(   // ! DEPRECATED
 		process.env.DB_URI,
 		{
 			useNewUrlParser: true,
