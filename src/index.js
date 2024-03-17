@@ -5,7 +5,7 @@ import cors from 'cors'
 // Import modules
 import 'dotenv/config'
 import { dbConnect } from './config/mongo.js'
-import { usersRouter } from './routes/users.js'
+import { tracksRouter } from './routes/tracks.js'
 
 // Initializations
 const app = express()
@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000
 app.use(cors())
 
 // Routes
-app.use('/api/v1', usersRouter)
+app.use('/api/v1/tracks', tracksRouter)
 
 // Running Servers
 app.listen(port, () => {
